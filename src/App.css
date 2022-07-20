@@ -1,7 +1,7 @@
 .header{
   height: 200px;
   width: 85%;
-  background-color: #000000bf;
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
   padding-top: 50px;
   border-radius: 30px;
   margin: auto;

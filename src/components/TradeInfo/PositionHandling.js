@@ -1,10 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import './PositionHandling.css'
-import Button from '@material-ui/core/Button';
 import { CancelOutlined } from '@material-ui/icons';
 import { Grid } from '@material-ui/core';
 import axios from 'axios';
-
 
 // ackground-color: aquamarine;
 const PositionHandling = () => {
@@ -48,10 +46,16 @@ const PositionHandling = () => {
     
     
     return (
-      <div className='position-handling-container' style={{backgroundColor: 'aquamarine'}}>
+      <div className='position-handling-container' style={{backgroundImage: "linear-gradient(to right, #8e2de2, #4a00e0)"}}>
     <div className='close-position-header'>
       <span className='ticker-name'>{data.tickerName}</span>
-      <Button id='close-position-button' variant="contained" color="secondary" onClick={handleDelete}><b id='close-position-text'>Close Position</b><CancelOutlined id = 'close-position-icon'/></Button>
+      <button id='close-position' class="button-82-pushable"  onClick={handleDelete}>
+      <span class="button-82-shadow"></span>
+      <span class="button-82-edge"></span>
+      <span class="button-82-front text">
+      <b id='close-position-text'>Close Position</b><CancelOutlined id = 'close-position-icon'/>
+      </span>
+    </button>      
     </div>
     <div style={{height: '5px', backgroundColor: 'black'}}/>
 
